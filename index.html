@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Simay'a Özel | Büyüyen Kalpler ✨</title>
+  <meta name="description" content="Simay için interaktif büyüyen estetik beyaz kalpler uygulaması. Ekrana basılı tuttukça dev estetik kalpler oluşturun!">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Starfield Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Interactive Heart & Particles Canvas -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Pointer Hold Pulse Ring Aura -->
+  <div id="chargingIndicator" class="holding-charging-indicator">
+    <div class="ring-pulse"></div>
+  </div>
+
+  <!-- App Main Overlay UI -->
+  <div class="app-container">
+    
+    <!-- Header -->
+    <header class="main-header">
+      <h1 class="main-title">Simay ✨</h1>
+      <p class="main-subtitle">Ekrana <strong>basılı tut</strong>: Ne kadar uzun basarsan o kadar <strong>ESTETİK BÜYÜK KALP</strong> çıkar! 🤍</p>
+    </header>
+
+    <!-- Floating Controls Toolbar -->
+    <div class="controls-bar">
+      <!-- Heart Color Selector -->
+      <div class="control-group">
+        <label for="colorSelect" class="control-label">Kalp Rengi:</label>
+        <select id="colorSelect" class="glass-select">
+          <option value="white" selected>Saf Beyaz 🤍</option>
+          <option value="pink">Gül & Pembe 💖</option>
+          <option value="neon">Neon Mor 💜</option>
+          <option value="gold">Altın ışıltı 💛</option>
+        </select>
+      </div>
+
+      <!-- Effect Mode -->
+      <div class="control-group">
+        <label for="modeSelect" class="control-label">Efekt:</label>
+        <select id="modeSelect" class="glass-select">
+          <option value="explode" selected>Kalp Şöleni 💥</option>
+          <option value="float">Yavaş Süzülme ✨</option>
+        </select>
+      </div>
+
+      <!-- Sound Toggle -->
+      <button id="soundToggleBtn" class="glass-btn">
+        <span id="soundIcon">🔊</span>
+        <span>Ses</span>
+      </button>
+
+      <!-- Clear Canvas -->
+      <button id="clearCanvasBtn" class="glass-btn secondary">
+        <span>🗑️ Temizle</span>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
